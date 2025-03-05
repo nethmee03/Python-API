@@ -4,7 +4,7 @@ from flask_restful import Api, Resource, reqparse, fields, marshal_with, abort
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Prevents warnings
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 db = SQLAlchemy(app)
 api = Api(app)
 
